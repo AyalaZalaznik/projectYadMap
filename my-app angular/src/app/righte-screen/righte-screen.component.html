@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-content>
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+            <mat-tab label="RESCUE" *ngIf="t1">
+                <app-tab1 (displayTab)="t1=false"></app-tab1>
+                <app-map></app-map>
+            </mat-tab>
+            <mat-tab label="NAMES" *ngIf="t2">
+                <app-tab2 (displayTab)="t2=false"></app-tab2>
+            </mat-tab>
+            <mat-tab label="PHOTOS" *ngIf="t3">
+                <app-tab3 (displayTab)="t3=false"></app-tab3>
+            </mat-tab>
+        </mat-tab-group>
+
+    </mat-card-content>
+</mat-card>
